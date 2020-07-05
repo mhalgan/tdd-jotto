@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { ShallowWrapper } from "enzyme";
 
 import checkPropTypes from "check-prop-types";
@@ -14,6 +15,7 @@ export const findByTestAttr = (wrapper, val) => {
 
 export const checkProps = (component, conformingProps) => {
   const propError = checkPropTypes(
+    // eslint-disable-next-line react/forbid-foreign-prop-types
     component.propTypes,
     conformingProps,
     "prop",
